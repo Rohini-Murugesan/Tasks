@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0834f62-a1f2-4cf9-9fe0-ddef52b000d0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gIY3xEcaYTGpfwbcA07mFqhEGR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rohini.m\WebstormProjects\HTML_Task2_Resume" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0834f62-a1f2-4cf9-9fe0-ddef52b000d0" name="Default Changelist" comment="" />
+      <created>1597803377385</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597803377385</updated>
+      <workItem from="1597803378407" duration="4768000" />
+      <workItem from="1597851313038" duration="8197000" />
+      <workItem from="1598097504357" duration="36948000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1345" height="158" key="GridCell.Tab.0.bottom" timestamp="1598325944104">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="158" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598325944104" />
+    <state width="1345" height="158" key="GridCell.Tab.0.center" timestamp="1598325944104">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="158" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598325944104" />
+    <state width="1345" height="158" key="GridCell.Tab.0.left" timestamp="1598325944104">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="158" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598325944104" />
+    <state width="1345" height="158" key="GridCell.Tab.0.right" timestamp="1598325944104">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="158" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598325944104" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1597803627405">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1597803627405" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1598345721272">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1598345721272" />
+  </component>
+</project>
