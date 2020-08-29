@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brian Dudey</title>
+    <style>
+        .relative{
+            position: relative;
+            top: 240px;
+        }
+        .avatar{
+            border-radius: 50%;
+            border: 6px dotted #d9c10b;
+            padding: 2px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .NameTag{
+            background-color: #d9c10b;
+            height: 80px;
+            width: 25%;
+            position: absolute;
+            top: 220px;
+            right: 520px;
+            border-radius: 5px;
+            text-align: center; /* text align,vertical align,line height ---- to align text vertically and horizontally middle*/
+            vertical-align: middle;
+            line-height: 80px; /*Line height must be same as the height*/
+            font-weight: lighter;
+            font-family: Arial;
+            font-size: 45px;
+        }
+        *{
+            font-family: Arial;
+            letter-spacing: 0.5px;
+        }
+        .side-heading{
+            color: black;
+            font-size: 25px;
+
+        }
+        p {
+            color: black;
+            font-size: 14px;
+            position: relative;
+            top: 0px;
+            padding: 3px;
+        }
+        li{
+            text-align: justify;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+<script>
+    // maindiv
+    maindiv = create_Elm_And_Set_Attr(main_div_obj,'div')
+    document.body.append(maindiv)
+
+    // div 2
+    div2 = create_Elm_And_Set_Attr(div2_obj,'div')
+    maindiv.appendChild(div2)
+
+    //img1
+    avatar = create_Elm_And_Set_Attr(avatar_obj,'img')
+    maindiv.appendChild(avatar)
+
+    //NameTag
+    NameTag = create_Elm_And_Set_Attr(NameTag_obj,'div')
+    NameTag.innerHTML = "BRIAN DUDEY" 
+    maindiv.appendChild(NameTag)
+
+  
+    //Contact_Info
+    Contact_Info = create_Elm_And_Set_Attr(Contact_Info_obj,'div')
+    Contact_Info.innerHTML = "N.Damen Avenue, Chicago 999999 | 999-999-9999 | hello@kickresume.com | www.kickresume.com<hr>"
+    maindiv.appendChild(Contact_Info)  
+
+    //Main-Table
+    Main_table = create_Elm_And_Set_Attr(main_table_obj,'table')
+    var Main_table_tbody = document.createElement('tbody')   
+    var Main_table_tr = document.createElement('tr')
+
+    //td-1
+    td1 = create_Elm_And_Set_Attr(td1_obj,'td')
+    //profile
+    profile_img = create_Elm_And_Set_Attr(profile_img_obj,'img')
+    td1.append(profile_img)
+    td1.innerHTML += "Profile<br>"
+    var ptag = document.createElement('p')
+    ptag.innerHTML = "Innovative optimized solution seeker. Etched to be at the deployment phase of my new career as a web developer.I am ambitious, adventurous, assiduous, an inated, and an alliteration advocate."
+    td1.appendChild(ptag)
+    //skills
+    skills_img = create_Elm_And_Set_Attr(skills_img_obj,'img')
+    td1.append(skills_img)
+    td1.innerHTML += "Skills <br>"
+
+    //Techskills
+    table_tech_skills = create_Elm_And_Set_Attr(table_skills_obj,'table')
+    var techskills_tbody = document.createElement('tbody') 
+    var techskills_tr = document.createElement('tr')
+    techskills_td = create_Elm_And_Set_Attr(skills_td_obj,'td')
+    techskills_td.innerHTML = "<b>Technical Skills</b>"   
+    techskills_tr.append(techskills_td)
+    techskills_tbody.append(techskills_tr)
+
+    for(value of ['Javascript','CSS','HTML','React','Redux','Mongo','Deployment']){
+        tr_skill = create_range_slider(value)
+        techskills_tbody.append(tr_skill)       
+    }
+    table_tech_skills.append(techskills_tbody)
+    td1.append(table_tech_skills)
+
+    //Additional Skills
+    table_add_skills = create_Elm_And_Set_Attr(table_skills_obj,'table')
+    var addskills_tbody = document.createElement('tbody') 
+    var addskills_tr = document.createElement('tr')
+    addskills_td = create_Elm_And_Set_Attr(skills_td_obj,'td')
+    addskills_td.innerHTML = "<b>Additional Skills</b>"   
+    addskills_tr.append(addskills_td)
+    addskills_tbody.append(addskills_tr)
+
+    for(value of ['Project Management','Recruitment','Business Development','Editing','Fundraising']){
+        tr_skill = create_range_slider(value)
+        addskills_tbody.append(tr_skill)       
+    }
+    table_add_skills.append(addskills_tbody)
+    td1.append(table_add_skills)
+
+    //WorkExp
+    img_work_exp = create_Elm_And_Set_Attr(work_exp_img_obj,'img')
+    td1.append(img_work_exp)
+    td1.innerHTML += "  Work Experience<br>"
+    work_exp_span = create_Elm_And_Set_Attr(work_exp_span_obj,'span')
+    work_exp_span.innerHTML = "<b><span style='padding-right: 100px'>Event Manager</span> 03/2014-02/2014 <br>C3 Presents, Washington</b>"
+    ul_tag_work = create_Elm_And_Set_Attr({ "style":"font-size: 14px"},'ul') 
+    ul_tag_work = add_li(ul_tag_work,li_list)   
+    td1.append(work_exp_span,ul_tag_work)
+
+
+    //td2
+    td2 = create_Elm_And_Set_Attr(td2_obj,'td')
+    img_work_exp = create_Elm_And_Set_Attr(work_exp_img_obj,'img')
+    td2.append(img_work_exp)
+    td2.innerHTML += "  Work Experience<br>"
+    work_exp_span = create_Elm_And_Set_Attr(work_exp_span_obj,'span')
+    work_exp_span.innerHTML = '<b><span style="padding-right: 20px">Community Relations Manager  </span> 06/2011 - 01/2014 <br>Gay & Lesbian Elder Housing, Los Angeles</b>'
+    ul_tag_work = create_Elm_And_Set_Attr({ "style":"font-size: 14px;justify-content:left"},'ul') 
+    ul_tag_work = add_li(ul_tag_work,li_list1)   
+    td2.append(work_exp_span,ul_tag_work)
+    
+    //Education
+    img_edu = create_Elm_And_Set_Attr(edu_img_obj,'img')
+    td2.append(img_edu)
+    td2.innerHTML += "   Education<br>"
+    edu_span = create_Elm_And_Set_Attr(work_exp_span_obj,'span')
+    edu_span.innerHTML = '<b><span style="padding-right: 20px">Engineering Immersion Program </span> 11/2018 - 06/2018 <br>Thinkful, Chicago</b></span>'
+    p_tag1 = document.createElement('p')
+    p_tag1.innerHTML = "Project-focused intensive program with emphasis on Mongo, Express, React, and JavaScript (MERN) technical stack"
+    ul_tag_edu = create_Elm_And_Set_Attr({ "style":"font-size: 14px;justify-content:left"},'ul') 
+    ul_tag_edu = add_li(ul_tag_edu,li_list2)   
+    td2.append(p_tag1,work_exp_span,ul_tag_edu)
+
+
+    //Edu2
+    edu_span2 = create_Elm_And_Set_Attr(work_exp_span_obj,'span')
+    edu_span2.innerHTML = '<b><span style="padding-right: 20px">BA, English </span> 09/2001 - 09/2005 <br>University of California,Los Angles</b>'
+    td2.append(edu_span2)
+
+    // Appending main table elm
+    Main_table_tr.appendChild(td1)
+    Main_table_tr.appendChild(td2)
+    Main_table_tbody.appendChild(Main_table_tr)
+    Main_table.appendChild(Main_table_tbody)
+    maindiv.appendChild(Main_table)
+
+
+
+
+</script>
+</body>
+</html>
