@@ -1,0 +1,33 @@
+WEB DEVELOPER TASK
+ Calculator Task 
+Problem statement
+Create a calculator using DOM.
+Use Keyboard events only for numbers. The input field should not accept letters.
+Add functions to perform addition, subtraction, division, multiplication and modulus. 
+The calculator must handle infix expressions.
+Use DOM to create html elements, css and bootstrap.
+
+How do I complete the task?
+How do I complete design?
+Create a file with the extension of .html
+Use your own design to implement the Calculator task.
+All your code should be in script.js file, where it has to be included inside of your body element.
+2. Any specifications and constraints?
+	Front-End: HTML, CSS, Bootstrap
+Do’s:- Use DOM to create all your HTML elements.
+Don’t:- Don't use any deprecated tags.
+
+3. How do I submit my work?
+Deploy your web application in Netlify (https://www.netlify.com).
+Push all your work files to github(https://github.com/).
+Submit your URLs in the form.
+4. Any basic hints to solve?
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+https://developer.mozilla.org/en-US/docs/Web/CSS
+https://www.w3.org/Style/CSS/Overview.en.html
+
+5. Terms and Conditions?
+You agree to not share this confidential document with anyone. 
+You agree to open-source your code (it may even look good on your profile!). Do not mention our company’s name anywhere in the code.
+We will never use your source code under any circumstances for any commercial purposes; this is just a basic assessment task. 
+NOTE: Any violation of Terms and conditions is strictly prohibited. You are bound to adhere to it.

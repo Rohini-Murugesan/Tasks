@@ -1,0 +1,54 @@
+.maindiv{
+height: 43vw;
+width: 40vw;
+background-color: darkcyan;
+display:block;
+margin:auto;
+box-shadow: 0.2vw 0.2vw 0.5vw 0.5vw lightcyan;
+position: relative;
+border-radius: 4vw;
+top: 2.8vw;
+}
+
+
+.calcDiv{
+    padding-left: 2vw;
+    padding-top: 2vw;
+    font-size: 3vw;
+    color: rgb(13, 71, 67);
+    outline: none; 
+}
+.inputVal{
+    height: 8vw;
+    width: 90%;
+    background-color: rgb(128, 233, 233);
+    margin: 2vw;
+    border-radius: 2vw; 
+    border: 0.2vw solid darkcyan;
+    box-sizing: border-box;
+    font-size: 4vw;
+    color: rgb(13, 71, 67);
+    outline: none; 
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2vw;
+    /* outline: none; */
+}
+*{
+    font-family: monospace;
+}
+
+.button-class{
+    height: 3vw;;
+    width: 8vw;
+    margin: 0.6vw ;
+    background-color: rgb(128, 233, 233) ;
+    font-size: 1.5vw;
+    color:  rgb(13, 71, 67);
+    border: 0.2vw solid darkcyan;
+    border-radius: 0.7vw;
+    outline: none;
+}
