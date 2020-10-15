@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: rgb(228, 244, 252);
+            background-image: url(quiz.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script>
+
+        //container
+        maindiv = createElmAndSetAttr({"class":"container text-info","style":"font-size:50px","id":"title"},"div")
+        mainspan = createElmAndSetAttr({"class":"font-weight-bold text-center"},"span")
+        mainspan.innerText = "Quick Quiz"
+        mainrow = createElmAndSetAttr({"class":"row"},"div")
+        maincol = createElmAndSetAttr({"class":"col-md-6 col-lg-5 offset-md-3","style":"font-size:50px","id":"title"},"div")   
+        mainrow.append(maincol)
+        maindiv.append(mainrow)  
+        document.body.append(maindiv)
+
+        //Buttons
+        playButton = createElmAndSetAttr({"class":"btn btn-primary m-2 bg-info d-block","id":"play","role":"button","href":"game.html"},"a")
+        playButton.innerText = "Play"
+        highScoresButton = createElmAndSetAttr({"class":"btn btn-primary bg-info d-block m-2","id":"highScores","role":"button","href":"highscores.html"},"a")
+        highScoresButton.innerText = "High Scores"
+        maincol.append(mainspan,playButton,highScoresButton)
+    </script>
+</body>
+</html>

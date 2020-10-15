@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Scores</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: black;
+            background-image: url(bb.jpg);
+        }
+    </style>
+</head>
+<body>
+
+    <script src="script.js"></script>
+    <script>
+        //container
+        divC = createElmAndSetAttr({'class':'container'},"div")
+        document.body.append(divC)
+        //row
+        divR = createElmAndSetAttr({'class':'row'},"div")
+        divC.append(divR)
+        
+        //div1
+        divcol1 = createElmAndSetAttr({'class':'col-lg-5 col-md-6 offset-lg-3 offset-md-2 text-info text-center font-weight-bold','id':'high-scores'},"div")
+        span1 = createElmAndSetAttr({'style':'font-size: 50px;'},"span")
+        span1.innerText = "HIGH SCORES"
+        divcol1.append(span1)
+        
+        //div2
+        divcol2 = createElmAndSetAttr({'class':'col-lg-5 col-md-6 offset-lg-3 offset-md-2 text-info text-center font-weight-bold'},"div")
+        a = createElmAndSetAttr({"class":"text-warning","href":"index.html"},"a")
+        a.innerText = "Go Home"
+        divcol2.append(a)
+        divR.append(divcol1,divcol2)
+        
+        //Display High Scores
+        displayHighScores()
+    </script>
+</body>
+</html>
