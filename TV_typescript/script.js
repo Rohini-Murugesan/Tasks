@@ -25,9 +25,12 @@ var TV = /** @class */ (function () {
             this.currentSongIndex += 1;
         }
         addMusicSymbol();
-        var audio = document.getElementById("audio");
-        audio.setAttribute("src", this.songs[this.currentSongIndex].songPath);
-        audio.play();
+        // let audio = <HTMLAudioElement>document.getElementById("audio")
+        var video = document.getElementById("video");
+        // audio.setAttribute("src", this.songs[this.currentSongIndex].songPath)
+        video.setAttribute("src", this.songs[this.currentSongIndex].videopath);
+        // audio.play()
+        video.play();
         var button = document.getElementById("play-pause");
         button.innerHTML = "PAUSE <i class='fas fa-pause'>";
     };
@@ -39,9 +42,12 @@ var TV = /** @class */ (function () {
             this.currentSongIndex -= 1;
         }
         addMusicSymbol();
-        var audio = document.getElementById("audio");
-        audio.setAttribute("src", this.songs[this.currentSongIndex].songPath);
-        audio.play();
+        // let audio = <HTMLAudioElement>document.getElementById("audio")
+        var video = document.getElementById("video");
+        // audio.setAttribute("src", this.songs[this.currentSongIndex].songPath)
+        video.setAttribute("src", this.songs[this.currentSongIndex].videopath);
+        // audio.play()
+        video.play();
         var button = document.getElementById("play-pause");
         button.innerHTML = "PAUSE <i class='fas fa-pause'>";
     };
@@ -97,50 +103,64 @@ var song1 = { songName: "Leja Re",
     releaseYear: "2019",
     songPath: ".\\songs\\Leja Re.mp3",
     songType: "Album song",
-    imgPath: ".\\Images\\Lejare.jpg" };
+    imgPath: ".\\Images\\Lejare.jpg",
+    videopath: ".\\Videos\\Leja_Re.mp4" };
 var song2 = { songName: "Blank Space",
     artist: "Taylor Swift",
     releaseYear: "2014",
     songPath: ".\\songs\\Blank Space.mp3",
     songType: "Album song",
-    imgPath: ".\\Images\\Blank-space.jpg" };
+    imgPath: ".\\Images\\Blank-space.jpg",
+    videopath: ".\\Videos\\Blank_Space.mp4" };
 var song3 = { songName: "Love Story",
     artist: "Taylor Swift",
     releaseYear: "2008",
     songPath: ".\\songs\\Love Story.mp3",
     songType: "Album song",
-    imgPath: ".\\Images\\LoveStory.jpg" };
+    imgPath: ".\\Images\\LoveStory.jpg",
+    videopath: ".\\Videos\\Love_Story.mp4" };
 var song4 = { songName: "Tera Ghata",
     artist: "Gajendra Verma",
     releaseYear: "2018",
     songPath: ".\\songs\\Tera Ghata.mp3",
     songType: "Album song",
-    imgPath: ".\\Images\\TeraGhata.jpg" };
+    imgPath: ".\\Images\\TeraGhata.jpg",
+    videopath: ".\\Videos\\Tera_Ghata.mp4" };
 var song5 = { songName: "You Are Not Alone",
     artist: "Michael Jackson",
     releaseYear: "1995",
     songPath: ".\\songs\\You Are Not Alone.mp3",
     songType: "Album song",
-    imgPath: ".\\Images\\You_Are_Not_Alone.jpg" };
+    imgPath: ".\\Images\\You_Are_Not_Alone.jpg",
+    videopath: ".\\Videos\\You_Are_Not_Alone.mp4" };
 var obj = new TV([song2, song1, song3, song4, song5]);
 var currentSong = obj.playSong();
 //audio obj
-var audio = createElmAndSetAttr({ 'id': 'audio', 'src': currentSong.songPath }, "audio");
-audio.autoplay = false;
-var colDiv = document.getElementById("TV");
-colDiv.appendChild(audio);
+// let audio = <HTMLAudioElement>createElmAndSetAttr({'id':'audio','src':currentSong.songPath},"audio")
+// audio.autoplay = false
+// audio.muted = true
+// let colDiv = document.getElementById("TV")
+// colDiv.appendChild(audio);
+//video obj
+var video = createElmAndSetAttr({ 'id': 'video', 'width': '450', 'height': '500', 'src': currentSong.videopath }, "video");
+video.autoplay = false;
+var colDiv1 = document.getElementById("Video");
+colDiv1.appendChild(video);
 //<i class="fas fa-music"></i>
 document.getElementById("play-pause").addEventListener("click", function () {
-    var audio = document.getElementById("audio");
+    // let audio = <HTMLAudioElement>document.getElementById("audio")
+    var video = document.getElementById("video");
     var button = document.getElementById("play-pause");
-    if (!audio.paused) {
-        audio.pause();
+    if (!video.paused) {
+        // audio.pause()
+        video.pause();
         button.innerHTML = 'PLAY <i class="fas fa-play-circle"></i>';
     }
     else {
         //card img2
         addMusicSymbol();
-        audio.play();
+        // audio.play()   
+        video.play();
         button.innerHTML = "PAUSE <i class='fas fa-pause'>";
     }
 });
@@ -160,7 +180,7 @@ var addMusicSymbol = function () {
         }
     }
     finally {
-        var cardImg2 = createElmAndSetAttr({ 'class': 'card-img', 'style': 'height:6vw;width:6vw', 'src': '.\\Images\\music.gif', 'id': 'now-playing' }, "img");
+        var cardImg2 = createElmAndSetAttr({ 'class': 'card-img', 'style': 'height:4vw;width:3vw', 'src': '.\\Images\\music.png', 'id': 'now-playing' }, "img");
         var index = obj.getCurrentIndex();
         var cardcol3 = document.getElementById("col-id-" + index);
         cardcol3.append(cardImg2);
