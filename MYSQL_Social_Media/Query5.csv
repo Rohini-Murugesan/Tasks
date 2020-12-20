@@ -1,0 +1,6 @@
+user_id,age,status,email,pwd
+1,25,ACTIVE,Rohini@gmail.com,Vidhya23
+2,25,INACTIVE,Vidhya@gmail.com,Vidhya23
+3,21,ACTIVE,Moni@abc.com,Vidhya23
+4,16,INACTIVE,Sudarsan@abc.com,Vidhya23
+5,17,ACTIVE,Dinesh@abc.com,Vidhya23
