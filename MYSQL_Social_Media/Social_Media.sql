@@ -1,4 +1,4 @@
-DROP database social_media; 
+#DROP database social_media; 
 create database social_media;   
 use social_media;
 CREATE TABLE user_profiles (user_id INT(5),name VARCHAR(15),age INT(3));
