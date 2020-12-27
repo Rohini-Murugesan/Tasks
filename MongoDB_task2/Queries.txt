@@ -1,0 +1,779 @@
+> use Zen
+switched to db Zen
+
+> show collections
+attendance
+codekata
+company_drives
+mentors
+tasks
+topic
+users
+
+
+> db.attendance.find().pretty()
+{
+        "_id" : ObjectId("5fe87c3fea53ca43017a8be8"),
+        "Date" : ISODate("2020-10-17T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "absent"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("5fe8635ba8b9545251653fec"),
+        "Date" : ISODate("2020-10-20T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "absent"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("5fe8640fa8b9545251653fed"),
+        "Date" : ISODate("2020-10-02T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "present"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("5fe8642aa8b9545251653fee"),
+        "Date" : ISODate("2020-10-28T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "present"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("5fe86441a8b9545251653fef"),
+        "Date" : ISODate("2020-10-23T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "present"
+                }
+        ]
+}
+>
+>
+>
+>
+>
+>
+> db.attendance.find().pretty()
+{
+        "_id" : ObjectId("5fe87c3fea53ca43017a8be8"),
+        "Date" : ISODate("2020-10-17T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "absent"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("5fe8635ba8b9545251653fec"),
+        "Date" : ISODate("2020-10-20T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "absent"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("5fe8640fa8b9545251653fed"),
+        "Date" : ISODate("2020-10-02T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "present"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("5fe8642aa8b9545251653fee"),
+        "Date" : ISODate("2020-10-28T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "present"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("5fe86441a8b9545251653fef"),
+        "Date" : ISODate("2020-10-23T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "absent"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "present"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "present"
+                }
+        ]
+}
+> db.codekata.find().pretty()
+{
+        "_id" : ObjectId("5fe85f1ba8b9545251653fe4"),
+        "prob_id" : 1,
+        "topic" : "Array",
+        "Geekoins" : 10,
+        "status" : "Solved"
+}
+{
+        "_id" : ObjectId("5fe85f1ba8b9545251653fe5"),
+        "prob_id" : 2,
+        "topic" : "Strings",
+        "Geekoins" : 10,
+        "status" : "Not Solved"
+}
+{
+        "_id" : ObjectId("5fe85f1ba8b9545251653fe6"),
+        "prob_id" : 3,
+        "topic" : "Data Structures",
+        "Geekoins" : 20,
+        "status" : "Solved"
+}
+{
+        "_id" : ObjectId("5fe85f1ba8b9545251653fe7"),
+        "prob_id" : 4,
+        "topic" : "Strings",
+        "Geekoins" : 30,
+        "status" : "Solved"
+}
+{
+        "_id" : ObjectId("5fe85f1ba8b9545251653fe8"),
+        "prob_id" : 5,
+        "topic" : "Array",
+        "Geekoins" : 10,
+        "status" : "Not Solved"
+}
+> db.company_drives.find().pretty()
+{
+        "_id" : ObjectId("5fe88236ea53ca43017a8bee"),
+        "Comapny_Id" : 1,
+        "Company_Name" : "company1",
+        "Drive_Date" : ISODate("2020-10-12T00:00:00Z"),
+        "Students_Attended" : [
+                1,
+                2,
+                3
+        ]
+}
+{
+        "_id" : ObjectId("5fe88236ea53ca43017a8bef"),
+        "Comapny_Id" : 2,
+        "Company_Name" : "company2",
+        "Drive_Date" : ISODate("2020-10-12T00:00:00Z"),
+        "Students_Attended" : [
+                4,
+                5
+        ]
+}
+{
+        "_id" : ObjectId("5fe88236ea53ca43017a8bf0"),
+        "Comapny_Id" : 3,
+        "Company_Name" : "company3",
+        "Drive_Date" : ISODate("2020-10-16T00:00:00Z"),
+        "Students_Attended" : [
+                1,
+                2,
+                4
+        ]
+}
+{
+        "_id" : ObjectId("5fe88236ea53ca43017a8bf1"),
+        "Comapny_Id" : 4,
+        "Company_Name" : "company4",
+        "Drive_Date" : ISODate("2020-10-17T00:00:00Z"),
+        "Students_Attended" : [
+                2,
+                3,
+                5
+        ]
+}
+{
+        "_id" : ObjectId("5fe88236ea53ca43017a8bf2"),
+        "Comapny_Id" : 5,
+        "Company_Name" : "company5",
+        "Drive_Date" : ISODate("2020-10-25T00:00:00Z"),
+        "Students_Attended" : [
+                1,
+                2,
+                3,
+                4
+        ]
+}
+> db.mentors.find().pretty()
+{
+        "_id" : ObjectId("5fe86a8ca8b9545251653ffa"),
+        "Mentor_Id" : 1,
+        "Mentor_Name" : "mentor1"
+}
+{
+        "_id" : ObjectId("5fe86a8ca8b9545251653ffb"),
+        "Mentor_Id" : 2,
+        "Mentor_Name" : "mentor2"
+}
+{
+        "_id" : ObjectId("5fe86a8ca8b9545251653ffc"),
+        "Mentor_Id" : 3,
+        "Mentor_Name" : "mentor3"
+}
+{
+        "_id" : ObjectId("5fe86a8ca8b9545251653ffd"),
+        "Mentor_Id" : 4,
+        "Mentor_Name" : "mentor4"
+}
+{
+        "_id" : ObjectId("5fe86a8ca8b9545251653ffe"),
+        "Mentor_Id" : 5,
+        "Mentor_Name" : "mentor5"
+}
+> db.tasks.find().pretty()
+{
+        "_id" : ObjectId("5fe87f1fea53ca43017a8be9"),
+        "Task_Id" : 1,
+        "Task" : "create a app",
+        "Month" : "October",
+        "Topic_Id" : 1,
+        "Date" : ISODate("2020-10-17T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "submitted"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "submitted"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "pending"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "pending"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "pending"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("5fe87f1fea53ca43017a8bea"),
+        "Task_Id" : 2,
+        "Task" : "create a app",
+        "Month" : "October",
+        "Topic_Id" : 4,
+        "Date" : ISODate("2020-10-20T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "submitted"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "pending"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "submitted"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "pending"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "submitted"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("5fe87f1fea53ca43017a8beb"),
+        "Task_Id" : 3,
+        "Task" : "create a app",
+        "Month" : "October",
+        "Topic_Id" : 2,
+        "Date" : ISODate("2020-10-02T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "pending"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "pending"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "pending"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "submitted"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "submitted"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("5fe87f1fea53ca43017a8bec"),
+        "Task_Id" : 4,
+        "Task" : "create a app",
+        "Month" : "October",
+        "Topic_Id" : 1,
+        "Date" : ISODate("2020-10-28T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "submitted"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "pending"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "submitted"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "submitted"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "pending"
+                }
+        ]
+}
+{
+        "_id" : ObjectId("5fe87f1fea53ca43017a8bed"),
+        "Task_Id" : 5,
+        "Task" : "create a app",
+        "Topic_Id" : 1,
+        "Month" : "November",
+        "Date" : ISODate("2020-11-23T00:00:00Z"),
+        "List" : [
+                {
+                        "student_id" : 1,
+                        "attendance" : "submitted"
+                },
+                {
+                        "student_id" : 2,
+                        "attendance" : "pending"
+                },
+                {
+                        "student_id" : 3,
+                        "attendance" : "pending"
+                },
+                {
+                        "student_id" : 4,
+                        "attendance" : "submitted"
+                },
+                {
+                        "student_id" : 5,
+                        "attendance" : "submitted"
+                }
+        ]
+}
+> db.topic.find().pretty()
+{
+        "_id" : ObjectId("5fe86626a8b9545251653ff0"),
+        "Topic_Id" : 1,
+        "Topic_Name" : "OOPS",
+        "Month" : "August"
+}
+{
+        "_id" : ObjectId("5fe86626a8b9545251653ff1"),
+        "Topic_Id" : 2,
+        "Topic_Name" : "JS",
+        "Month" : "September"
+}
+{
+        "_id" : ObjectId("5fe86626a8b9545251653ff2"),
+        "Topic_Id" : 3,
+        "Topic_Name" : "Data Structures",
+        "Month" : "October"
+}
+{
+        "_id" : ObjectId("5fe86626a8b9545251653ff3"),
+        "Topic_Id" : 4,
+        "Topic_Name" : "Node",
+        "Month" : "October"
+}
+{
+        "_id" : ObjectId("5fe86626a8b9545251653ff4"),
+        "Topic_Id" : 5,
+        "Topic_Name" : "React",
+        "Month" : "August"
+}
+> db.users.find().pretty()
+{
+        "_id" : ObjectId("5fe86ae4a8b9545251653fff"),
+        "user_id" : 1,
+        "Name" : "Rohini0",
+        "Age" : 21,
+        "codekata_solved" : 10,
+        "contact" : 8610352003,
+        "Mentor_Id" : 1
+}
+{
+        "_id" : ObjectId("5fe86ae4a8b9545251654000"),
+        "user_id" : 2,
+        "Name" : "Rohini1",
+        "Age" : 22,
+        "codekata_solved" : 20,
+        "contact" : 8610352003,
+        "Mentor_Id" : 1
+}
+{
+        "_id" : ObjectId("5fe86ae4a8b9545251654001"),
+        "user_id" : 3,
+        "Name" : "Rohini2",
+        "Age" : 23,
+        "codekata_solved" : 30,
+        "contact" : 8610352003,
+        "Mentor_Id" : 2
+}
+{
+        "_id" : ObjectId("5fe86ae4a8b9545251654002"),
+        "user_id" : 4,
+        "Name" : "Rohini3",
+        "Age" : 24,
+        "codekata_solved" : 40,
+        "contact" : 8610352003,
+        "Mentor_Id" : 3
+}
+{
+        "_id" : ObjectId("5fe86ae4a8b9545251654003"),
+        "user_id" : 5,
+        "Name" : "Rohini4",
+        "Age" : 25,
+        "codekata_solved" : 50,
+        "contact" : 8610352003,
+        "Mentor_Id" : 3
+}
+>
+
+#1. Find all the topics and tasks which are thought in the month of October
+
+> db.topic.aggregate([
+{$lookup:{from:"tasks",localField:"Topic_Id", foreignField:"Topic_Id",as:"Related_task"}},
+{$match:{Month:"October"}},
+{$unwind:"$Related_task"}]).pretty()
+
+{
+        "_id" : ObjectId("5fe86626a8b9545251653ff3"),
+        "Topic_Id" : 4,
+        "Topic_Name" : "Node",
+        "Month" : "October",
+        "Related_task" : {
+                "_id" : ObjectId("5fe87f1fea53ca43017a8bea"),
+                "Task_Id" : 2,
+                "Task" : "create a app",
+                "Month" : "October",
+                "Topic_Id" : 4,
+                "Date" : ISODate("2020-10-20T00:00:00Z"),
+                "List" : [
+                        {
+                                "student_id" : 1,
+                                "attendance" : "submitted"
+                        },
+                        {
+                                "student_id" : 2,
+                                "attendance" : "pending"
+                        },
+                        {
+                                "student_id" : 3,
+                                "attendance" : "submitted"
+                        },
+                        {
+                                "student_id" : 4,
+                                "attendance" : "pending"
+                        },
+                        {
+                                "student_id" : 5,
+                                "attendance" : "submitted"
+                        }
+                ]
+        }
+}
+>
+
+
+#2. Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+
+> db.company_drives.find({     
+	Drive_Date: {         
+		$gte: ISODate("2020-10-15T00:00:00.000Z"),         
+		$lt: ISODate("2020-10-31T00:00:00.000Z")    
+		}
+	}).pretty();
+
+{
+        "_id" : ObjectId("5fe88236ea53ca43017a8bf0"),
+        "Comapny_Id" : 3,
+        "Company_Name" : "company3",
+        "Drive_Date" : ISODate("2020-10-16T00:00:00Z"),
+        "Students_Attended" : [
+                1,
+                2,
+                4
+        ]
+}
+{
+        "_id" : ObjectId("5fe88236ea53ca43017a8bf1"),
+        "Comapny_Id" : 4,
+        "Company_Name" : "company4",
+        "Drive_Date" : ISODate("2020-10-17T00:00:00Z"),
+        "Students_Attended" : [
+                2,
+                3,
+                5
+        ]
+}
+{
+        "_id" : ObjectId("5fe88236ea53ca43017a8bf2"),
+        "Comapny_Id" : 5,
+        "Company_Name" : "company5",
+        "Drive_Date" : ISODate("2020-10-25T00:00:00Z"),
+        "Students_Attended" : [
+                1,
+                2,
+                3,
+                4
+        ]
+}
+>
+
+
+#3.Find all the company drives and students who are appeared for the placement.
+
+db.company_drives.aggregate([
+{$lookup:{from:"users", localField:"Students_Attended", foreignField:"user_id", as:"Users"}}, 
+{$project:{"Company Name:":"$Company_Name","Student Name:":"$Users.Name"}} ])
+
+
+{ "_id" : ObjectId("5fe88236ea53ca43017a8bee"), "Company Name:" : "company1", "Student Name:" : [ "Rohini0", "Rohini1", "Rohini2" ] }
+{ "_id" : ObjectId("5fe88236ea53ca43017a8bef"), "Company Name:" : "company2", "Student Name:" : [ "Rohini3", "Rohini4" ] }
+{ "_id" : ObjectId("5fe88236ea53ca43017a8bf0"), "Company Name:" : "company3", "Student Name:" : [ "Rohini0", "Rohini1", "Rohini3" ] }
+{ "_id" : ObjectId("5fe88236ea53ca43017a8bf1"), "Company Name:" : "company4", "Student Name:" : [ "Rohini1", "Rohini2", "Rohini4" ] }
+{ "_id" : ObjectId("5fe88236ea53ca43017a8bf2"), "Company Name:" : "company5", "Student Name:" : [ "Rohini0", "Rohini1", "Rohini2", "Rohini3" ] }
+
+
+#4.Find the number of problems solved by the user in codekata
+
+db.users.find({},{"Name":1,"codekata_solved":1}).pretty()
+
+{
+        "_id" : ObjectId("5fe86ae4a8b9545251653fff"),
+        "Name" : "Rohini0",
+        "codekata_solved" : 10
+}
+{
+        "_id" : ObjectId("5fe86ae4a8b9545251654000"),
+        "Name" : "Rohini1",
+        "codekata_solved" : 20
+}
+{
+        "_id" : ObjectId("5fe86ae4a8b9545251654001"),
+        "Name" : "Rohini2",
+        "codekata_solved" : 30
+}
+{
+        "_id" : ObjectId("5fe86ae4a8b9545251654002"),
+        "Name" : "Rohini3",
+        "codekata_solved" : 40
+}
+{
+        "_id" : ObjectId("5fe86ae4a8b9545251654003"),
+        "Name" : "Rohini4",
+        "codekata_solved" : 50
+}
+
+
+#5.Find all the mentors with who has the mentee's count more than 1
+
+> db.users.aggregate([{$group:{_id:"$Mentor_Id",count: {$sum: 1}}},{$match:{count:{"$gt":1}}},{$project:{"Number of students":"$count"}}])
+
+{ "_id" : 3, "Number of students" : 2 }
+{ "_id" : 1, "Number of students" : 2 }
+
+ 
+
+
+
+
+
